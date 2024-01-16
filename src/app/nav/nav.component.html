@@ -1,0 +1,43 @@
+<!-- <nav class="bg-gray-800 sticky top-40">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"> 
+        <div class="relative flex h-16 items-center justify-between">
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+    -->
+
+<nav class="fixed flex flex-col top-0 left-0 w-14 hover:w-80 md:w-80 bg-gray-800 h-full text-gray-600 transition-all duration-300 border-none z-10 sidebar">
+    <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
+      <div class="">
+        <div class="">
+
+          <div class="">
+            <div class="flex flex-col py-4 space-y-1">
+                <app-header></app-header>
+            </div>
+            <div class=" flex flex-col py-4 space-y-1">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="/home#profile" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
+              <a href="/home#experience" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Experience</a>
+              <a href="/home#education" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Education</a>
+              <a href="/home#skill" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Skils</a>
+              <a href="/home#interest" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Interest</a>
+              <a href="/home#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+      </div>
+    </div>
+  </nav>

@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*General style*/
+html, body {
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+    scroll-behavior: smooth;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.75rem;
+    margin: 1rem 2rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color{
+    border: rgb(53, 53, 53)0.1rem solid;
+} 
+
+.btn-color:hover{
+    cursor: pointer;
+}
+
+.btn-color{
+    background: rgb(53, 53, 53); 
+    color: white;
+}
+
+.btn-color:hover{
+    background: black; 
+}
+
+@layer base{
+
+    section{
+        @apply pl-80 ml-8 grid grid-cols-1 gap-4 content-center justify-center min-h-screen bg-white dark:bg-gray-900 sm:items-center sm:pt-0;
+    }
+    .logo-pic{
+        cursor: pointer;
+    }
+    h1{
+        @apply text-center text-4xl sm:text-5xl text-white dark:text-white font-extrabold tracking-tight;
+    }
+
+    h2{
+        @apply text-3xl sm:text-5xl text-gray-800 dark:text-white font-semibold tracking-tight;
+    }
+
+    h3{
+        @apply text-xl sm:text-2xl text-center text-gray-600 dark:text-gray-400 pt-8 text-center;
+    }
+
+    p {
+        @apply text-gray-600 dark:text-gray-200 p-2 text-center;
+    }
+
+
+}
+
+@layer components {
+
+    .card{
+        @apply mx-auto mt-11 w-80  overflow-hidden rounded-lg bg-white dark:bg-slate-600 shadow-md duration-300 hover:scale-105 hover:shadow-lg;
+    }
+    .card-secundary-text {
+        @apply mb-1 dark:text-white text-gray-900;
+    }
+    .card-primary-text {
+        @apply mb-2 text-lg font-semibold text-green-500 text-center;
+    }
+}
+
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.icon{
+    cursor: pointer;
+    height: 3rem;
+}
+
+
+
